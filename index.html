@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RR VS CLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-ui.min.js"></script>
+    <link href="css/jquery-ui.css" rel="stylesheet">
+</head>
+
+
+<div data-role="page" id="home">
+<header data-role="header" data-theme="a" data-fullscreen="true" class="header">
+    <h1>welcome</h1>
+</header>
+<article data-role="content">
+    <ul data-role="listview" data-filter="true">
+
+        <li>
+            <a href="#clio">
+                <h1>renault clio but why?</h1>
+                <p>This is why the renault clio is the best car in the world
+                    and destroys everything else on track!</p>
+            </a>
+        </li>
+    </ul>
+    <ul data-role="listview">
+        <li>
+            <a href="#RR">
+                <h1>rolls royce ghost and why?</h1>
+                <p>This is why we feature the most luxurius car in this app
+                and why it is worth every penny!</p>
+            </a>
+        </li>
+    </ul>
+</article>
+<footer data-role="footer" data-theme="a" data-position="fixed">
+    <nav data-role="navbar">
+        <ul>
+            <li><a data-icon="grid" href="#gallerij">gallerij</a></li>
+            <li><a data-icon="shop" href="#bestel">bestel</a></li>
+            <li><a data-icon="location" href="#plaats">location</a></li>
+        </ul>
+    </nav>
+</footer>
+</div><!-- dit is de home pagina--><!--home page-->
+
+<div data-role="page" id="bestel">
+    <header data-role="header" data-theme="a" data-fullscreen="true" class="header">
+        <h1>welcome</h1>
+        <a href="#home">home</a>
+    </header>
+
+    <div data-role="content">
+        <h2 class="demoHeaders">Controlgroup</h2>
+        <fieldset>
+            <legend>Rental Car</legend>
+            <div id="controlgroup">
+                <select id="car-type" style="margin-bottom: 20px">
+                    <option>rolls royce phantom</option>
+                    <option>rolls royce wraith</option>
+                    <option>rolls royce ghost</option>
+                    <option>renault talisman</option>
+                    <option>renault clio</option>
+                </select>
+                <legend>Transmission</legend>
+                <label for="transmission-standard">Standard</label>
+                <input type="radio" name="transmission" id="transmission-standard">
+                <label for="transmission-automatic">Automatic</label>
+                <input type="radio" name="transmission" id="transmission-automatic">
+
+                <label for="insurance">same day delivery?</label>
+                <input type="checkbox" name="insurance" id="insurance">
+                <label for="horizontal-spinner" class="ui-controlgroup-label">license plate place holder</label>
+                <input id="horizontal-spinner" class="ui-spinner-input">
+                <button href="#orderplaced"><a href="#orderplaced">Book Now!</a></button>
+            </div>
+        </fieldset>
+        </div>
+    <footer data-role="footer" data-theme="a" data-position="fixed">
+        <nav data-role="navbar">
+            <ul>
+                <li><a data-icon="grid" href="#gallerij">gallerij</a></li>
+                <li><a data-icon="shop" href="#home">home</a></li>
+                <li><a data-icon="location" href="#plaats">location</a></li>
+            </ul>
+        </nav>
+    </footer>
+    </div>
+
+<div data-role="page" id="orderplaced">
+<article data-role="content" id="orderplaced">
+   <p>youre order has been recieved</p>
+</article>
+<footer data-role="footer" data-theme="a" data-position="fixed">
+    <h1><a href="#home">home</a></h1>
+</footer>
+</div><!-- dit is de home pagina--><!--home page-->
+
+<div data-role="page" id="plaats">
+
+        <img src="img/sorryfrancisca2.gif">
+        <p>dit is me helaas niet glukt sorryyy :p</p>
+
+    <footer data-role="footer" data-theme="a" data-position="fixed">
+        <nav data-role="navbar">
+            <ul>
+                <li><a data-icon="grid" href="#gallerij">gallerij</a></li>
+                <li><a data-icon="shop" href="#bestel">bestel</a></li>
+                <li><a data-icon="home" href="#home">home</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div><!-- dit is de home pagina--><!--home page-->
+
+<div data-role="page" id="clio">
+    <header data-role="header"data-theme="a">
+        <h1>The Renault Clio</h1>
+        <a href="#home">home</a>
+    </header>
+
+</div> <!--dit is weer ene pagina--><!--eerste pagine over clio-->
+
+<div data-role="page" id="RR">
+    <header data-role="header"data-theme="a">
+        <h1>The Rolls Royce Ghost</h1>
+        <a href="#home">home</a>
+    </header>
+    <article data-role="content">
+        <ul data-role="listview">
+            <li>
+                <a style="height: 60px" href="#overview" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline  " data-transition="pop">Driving</a>
+                <div data-role="popup" id="overview" data-theme="a" class="ui-corner-all">
+                    <form>
+                        <div style="padding:10px 20px;">
+                            <h3>Overview</h3>
+                            <p>The Ghost is a Rolls to take when the parking is tighter and the chauffeur’s got the day off. Smaller, in the same way a tanker is to a supertanker,
+                                the Ghost keeps Rolls-Royce’s imperious manner but with slightly more bluff edges and not quite as aggrandising a
+                                front grille. coming from a company that still refers to its products as ‘motor cars’ the Ghost retains old-world charm and luxury despite being
+                                largely based on a BMw 7-Series’s gubbins.
+
+                                Now in 2015 Series II guise, the Ghost is closer than ever before to its big brother - the venerable Phantom.
+                                Every single panel on the front of the car has been changed. There’s new LED headlights, some new interior tech’, and even a satellite-aided gearbox.
+                            </p>
+                            <img src="img/buyers_guide_-_rrghost_-_rear.jpg" />
+                        </div>
+                    </form>
+                </div>
+            </li>
+        </ul>
+
+        <ul data-role="listview">
+            <li>
+                <a style="height: 60px" href="#driving" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline  " data-transition="pop">Driving</a>
+                <div data-role="popup" id="driving" data-theme="a" class="ui-corner-all">
+                    <form>
+                        <div style="padding:10px 20px;">
+                            <h3>Driving</h3>
+                            <p>You’re more likely to drive the Ghost than its Phantom bigger sister, though it’s still a sizeable machine to pilot around town.
+                                It feels authentic enough behind the thin-rimmed wheel, but there’s a bit more chatter through the steering wheel than the Phantom. Likewise,
+                                the engine’s heard more often, but the sound of a 6.5-litre twin-turbo V12 isn’t a bad one. The days of Rolls-Royce stating power outputs as ‘ample’ are long gone,
+                                but 563bhp more than fits that description. combined with 575lb ft of torque and a slick, but sometimes busy eight-speed automatic,
+                                the ghost will reach 62mph in 4.9secs. That should let you escape swiftly from even the most determined traffic- light beggars. The ride is largely excellent,
+                                the ghost’s trick air springs claimed to be able to detect which side a passenger sits in the rear and adjust accordingly,
+                                but our underinvested roads see the Ghost sometimes struggle to retain its dignified composure.
+                            </p>
+                            <img src="img/buyers_guide_-_rrghost_-_front.jpg" />
+                        </div>
+                    </form>
+                </div>
+            </li>
+        </ul>
+
+        <ul data-role="listview">
+            <li>
+                <a style="height: 60px" href="#ontheinside" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline  " data-transition="pop">On the inside</a>
+                <div data-role="popup" id="ontheinside" data-theme="a" class="ui-corner-all">
+                    <form>
+                        <div style="padding:10px 20px;">
+                            <h3>On the inside</h3>
+                            <p>The Ghost’s more driver-centric feel is immediately apparent when you get in the front.
+                                The dashboard is more conventional – if retaining the necessary level of polished materials and chrome inlays for a £200,000+
+                                car – but it’s lower and there are more switches and dials than in its Phantom relative.
+                                getting in the front does rob you of the experience of the rear- hinged ‘coach’ back doors, which make getting in the rear so special.
+                                There’s plenty of room, and the boot’s sizeable too, but if you’ve a Napoleon complex there’s an extended wheelbase version which gains 17cm over the standard car.
+                                For the SII, Rolls has fitted some new, more comfortable front seats, and a suitably powerful stereo.
+                                You’ll also find BMW’s latest infotainment rig, with a new 10.25in central screen and a touchpad on the crystal rotary controller.
+                            </p>
+                            <img src="img/buyers_guide_-_rrghost_-_int.jpg" />
+                        </div>
+                    </form>
+                </div>
+            </li>
+        </ul>
+
+        <ul data-role="listview">
+            <li>
+                <a style="height: 60px" href="#owning" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline  " data-transition="pop">Owning</a>
+                <div data-role="popup" id="owning" data-theme="a" class="ui-corner-all">
+                    <form>
+                        <div style="padding:10px 20px;">
+                            <h3>Owning</h3>
+                            <p>
+                                Even entry-level Rolls-Royces don’t come cheap, with the standard wheelbase Ghost starting quite a way north of £200k.
+                                That’s before you dip into the extensive options list. Fuel economy is officially quoted at 20.8mpg, but good luck with that.
+                                Running costs will be punitive however it’s driven. High demand means residual values will be good, but really,
+                                if you’re in this sphere you’re not thinking about how much it’ll be worth when you replace it.
+                                We’d still save up for a Phantom, though.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </li>
+        </ul>
+
+        <ul data-role="listview">
+            <li>
+                <a style="height: 60px" href="#nerdinfo" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline  " data-transition="pop">Info for nerds</a>
+                <div data-role="popup" id="nerdinfo" data-theme="a" class="ui-corner-all">
+                    <form>
+                        <div style="padding:10px 20px;">
+                            <h3>Info for nerds</h3>
+                            <table style="width:50%">
+
+                            <tr>
+                                <td>Length</td>
+                                <td>5.399mm</td>
+                            </tr>
+                            <tr>
+                                <td>Height</td>
+                                <td>1,550mm</td>
+                            </tr>
+                            <tr>
+                                <td>Seats</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Doors</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Wheel Type</td>
+                                <td>19" Alloy</td>
+                            </tr>
+                            <tr>
+                                <td>Top speed</td>
+                                <td>155Mph</td>
+                            </tr>
+                            <tr>
+                                <td>0–62</td>
+                                <td>	4.70s</td>
+                            </tr>
+                            <tr>
+                                <td>Engine Power - BHP</td>
+                                <td>563bhp</td>
+                            </tr>
+                            <tr>
+                                <td>Transmission</td>
+                                <td>Automatic</td>
+                            </tr>
+                        </table>
+                        <img src="img/Marken_Rolls_Royce_Motor.jpg" />
+                        </div>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </article>
+
+</div> <!--dit is weer ene pagina--><!--alle pagina's over rolls royce-->
+
+<div data-role="page" id="gallerij">
+    <header data-role="header" data-theme="a" data-fullscreen="true" class="header">
+        <h1>welcome</h1>
+    </header>
+    <article data-role="content">
+
+        <img src="img/clio-limited.jpg.ximg.l_12_m.smart.jpg">
+        <img src="img/842500a.jpg">
+        <img src="img/download.jpg">
+        <img src="img/images.jpg">
+        <img src="img/images%20(1).jpg">
+
+
+    </article>
+    <footer data-role="footer" data-theme="a" data-position="fixed">
+        <nav data-role="navbar">
+            <ul>
+
+                <li><a data-icon="shop" href="#bestel">bestel</a></li>
+                <li><a data-icon="location" href="#plaats">location</a></li>
+                <li><a data-icon="home" href="#home">home</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div><!-- dit is de home pagina--><!--home page-->
+
+<div data-role="page" id="clio">
+    <header data-role="header" data-position="fixed" data-theme="a">
+        <h1>The Renault Clio</h1>
+        <a href="#home">home</a>
+    </header>
+    <article data-role="content">
+        <ul data-role="listview" data-filter="true">
+
+            <li>
+                <a href="#c_driving">
+                    <h1>Driving</h1>
+                    <p>Driving in a Clio is awesome!</p>
+                </a>
+            </li>
+            <li>
+                <a href="#c_looks">
+                    <h1>Looks</h1>
+                    <p>Why I think the clio is beautiful</p>
+                </a>
+            </li>
+            <li>
+                <a href="#c_price">
+                    <h1>Price</h1>
+                    <p>A good reason to go for a Renault instead of a Royce</p>
+                </a>
+            </li>
+            <li>
+                <a href="#c_engine">
+                    <h1>Engine</h1>
+                    <p>Why i love the Clio's engine</p>
+                </a>
+            </li>
+        </ul>
+    </article>
+    <footer data-role="footer" data-theme="a" data-position="fixed">
+        <nav data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-icon="home">home</a></li>
+                <li><a href="#clio" data-icon="grid">clio</a></li>
+                <li><a href="#RR" data-icon="grid">rolls royce</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div> <!--dit is weer ene pagina-->
+
+<div data-role="page" id="c_driving">
+    <header data-role="header" data-position="fixed" data-theme="a">
+        <h1>Driving</h1>
+        <a href="#clio">back</a>
+    </header>
+    <div class="ui-body ui-body-a ui-corner-all">
+        <h3>Driving in the Renault Clio</h3>
+        <p>
+            Driving in the Renault Clio 1.6 16V is an awesome experience. The car weighs around 1090kg, and the engine is able to unleash a the power of 110 horses.
+            This awesome HP/KG ratio makes driving feel like go-karting.
+        </p>
+
+        <p>
+            The Clio's top speed lies around 200 km/h, a very respectable speed for a seemingly average car made in
+            the year 2000.
+        </p>
+        <img class="clio_img" src="img/clio_black_cut.png"/>
+    </div>
+    <footer data-role="footer" data-theme="a" data-position="fixed">
+        <nav data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-icon="home">home</a></li>
+                <li><a href="#clio" data-icon="grid">clio</a></li>
+                <li><a href="#RR" data-icon="grid">rolls royce</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+
+<div data-role="page" id="c_looks">
+    <header data-role="header" data-position="fixed" data-theme="a">
+        <h1>Looks</h1>
+        <a href="#clio">back</a>
+    </header>
+    <div class="ui-body ui-body-a ui-corner-all">
+        <h3>The looks of the Renault Clio</h3>
+        <p>
+            I really like the look of the Renault Clio 1.6 16V. The car looks small and cute, so nobody expects the fierce temperament and the roaring engine under the hood.
+        </p>
+
+        <p>
+            I love the look on people's faces when the tiny black car darts away with screeching tires.
+        </p>
+        <img class="clio_img" src="img/backsnapseed.jpeg"/>
+    </div>
+    <footer data-role="footer" data-theme="a" data-position="fixed">
+        <nav data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-icon="home">home</a></li>
+                <li><a href="#clio" data-icon="grid">clio</a></li>
+                <li><a href="#RR" data-icon="grid">rolls royce</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+
+<div data-role="page" id="c_price">
+    <header data-role="header" data-position="fixed" data-theme="a">
+        <h1>Price</h1>
+        <a href="#clio">back</a>
+    </header>
+
+
+    <div class="ui-body ui-body-a ui-corner-all">
+        <h3>The price of a Renault Clio</h3>
+        <p>
+            When comparing the Renault Clio to a Rolls Royce Ghost, there is one thing that is undeniably better. The price.
+        </p>
+
+        <p>
+            A new Renault Clio 1.6 16V used to cost around €16.000, but right now they can be bought second-hand for €2000.
+            That makes the Rolls Royce Ghost 22 times more expensive then a new Clio, and a whopping 116 times more expensive then a second-hand Clio!
+        </p>
+        <img class="clio_img" src="img/frontsnapseed.jpeg"/>
+    </div>
+    <footer data-role="footer" data-theme="a" data-position="fixed">
+        <nav data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-icon="home">home</a></li>
+                <li><a href="#clio" data-icon="grid">clio</a></li>
+                <li><a href="#RR" data-icon="grid">rolls royce</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+
+<div data-role="page" id="c_engine">
+    <header data-role="header" data-position="fixed" data-theme="a">
+        <h1>Engine</h1>
+        <a href="#clio">back</a>
+    </header>
+    <div class="ui-body ui-body-a ui-corner-all">
+        <h3>The engine of the Renault Clio</h3>
+        <p>
+            The engine is one of the best parts of the Clio. With 4 pistons and 110 horsepower, it really packs a punch, especially in a small car such as the Clio.
+
+        </p>
+
+        <p>
+            It really shines when you are driving at the higher RPM's. That's when the engine starts to howl, and you can feel the little car come alive.
+        </p>
+
+        <p>
+            Even at the lower RPM's, it doesn't really struggle. It can pull up in second gear, almost without effort.
+        </p>
+        <img class="clio_img" src="img/enginesnapseed.jpeg"/>
+    </div>
+    <footer data-role="footer" data-theme="a" data-position="fixed">
+        <nav data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-icon="home">home</a></li>
+                <li><a href="#clio" data-icon="grid">clio</a></li>
+                <li><a href="#RR" data-icon="grid">rolls royce</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+
+</body>
+<script>
+    //reset type=date inputs to text
+    $( document ).bind( "mobileinit", function(){
+        $.mobile.page.prototype.options.degradeInputs.date = true;
+    });
+</script>
+</html>
+
+
+
+
